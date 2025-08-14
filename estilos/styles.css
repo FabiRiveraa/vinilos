@@ -1,0 +1,116 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* ===== PORTADA ===== */
+.portada {
+    background-image: url(../imagenes/fondo-1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+.logo {
+    width: 100px;
+}
+.portada h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #ffffff;
+}
+.portada p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* ===== MISIÓN Y VISIÓN ===== */
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-image: url("imagenes/fondo-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.mision, .vision {
+    width: 45%;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.img{
+    width: 45%;
+    
+}
+
+/* ===== OBJETIVOS ===== */
+.objetivos {
+    padding: 30px 20px;
+    background-color: #222;
+}
+.objetivos h2 {
+    text-align: center;
+}
+.objetivos ul {
+    list-style: none;
+    padding: 0;
+}
+.objetivos li {
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+/* ===== CATÁLOGO ===== */
+.catalogo {
+    padding: 40px 20px;
+    background-color: #111;
+}
+.catalogo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.producto {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+.precio {
+    color: #0f0;
+    font-weight: bold;
+}
+.producto:hover .precio {
+    color: #e91e63;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mision, .vision {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
